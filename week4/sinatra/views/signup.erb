@@ -1,0 +1,10 @@
+<body>
+<h1>Signup</h1>
+
+<%if @age >= 18 %>
+<p>Your are old enough to join us</p>
+<%else%>
+<p>Just wait for <%=18 - @age%> more years we are waiting<p>
+
+<%end%>
+</body>

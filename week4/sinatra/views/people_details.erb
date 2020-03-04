@@ -1,0 +1,13 @@
+@@people_details
+<body>
+<table>
+    <% @people_details.each do |d, b| %>
+    <tr>
+        <th><%= d %></th>
+        <% b.each do |c| %>
+        <td><%= c %></td>
+        <% end %>
+    </tr>
+    <% end %>
+</table>
+</body>
