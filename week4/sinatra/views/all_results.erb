@@ -1,0 +1,11 @@
+<% if File.zero?("results.txt") %>
+<p>No results at the moment</p>
+<%else%>
+<h1> All Results</h1>
+<ul>
+  <%@all_results.each do |result| %>
+    <li><%= result%></li>
+  <% end %>
+<ul>
+<%end%>
+<a href = '/sum'>link to sum</a>

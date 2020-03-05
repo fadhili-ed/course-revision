@@ -1,0 +1,8 @@
+<%if @first_number.strip == "" or @second_number.strip == " "%>
+<p><%= @empty_error %></p>
+<%elsif @first_number.to_i == @regular_expression or  @second_number.to_i == @regular_expression %>
+<p><%= @invalid_values %></p>
+<%else%>
+<p>The sum of <%=@first_number%> and <%=@second_number%> is <%= @first_number.to_f + @second_number.to_f%></p>
+<%end%>
+<a href='/sum'>link to sum</a>
